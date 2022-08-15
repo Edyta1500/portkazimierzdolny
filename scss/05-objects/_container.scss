@@ -7,9 +7,9 @@
     margin: 0 auto;
     padding: 0 $gutter;
 
-    // @include small {
-    //     max-width: 50 * $grid-base;
-    // }
+    &--table {
+        min-height: 100vh;
+    }
     
     @include medium {
         max-width: 74 * $grid-base;

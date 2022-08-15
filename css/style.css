@@ -83,6 +83,9 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
+.container--table {
+  min-height: 100vh;
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 740px;
@@ -334,6 +337,12 @@ p {
 .form__item:focus {
   background-color: rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
+}
+
+.table {
+  color: #222601;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .tekst {
