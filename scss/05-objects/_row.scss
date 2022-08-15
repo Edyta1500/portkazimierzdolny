@@ -1,0 +1,26 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.row {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1.5 * $grid-base;
+
+    &--tekst{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    
+//    @include small {
+//         flex-direction: row;
+//    }
+
+    @include medium {
+        flex-direction: row;
+    }
+
+}

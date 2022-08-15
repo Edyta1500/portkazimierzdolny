@@ -1,0 +1,21 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.tekst{
+
+    color: $color3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 4.5rem;
+    line-height: 2.5rem; 
+    
+    @include medium {
+        width: 60%;
+    }
+
+    @include large {
+        width: 40%;
+    }
+
+}

@@ -1,0 +1,84 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.nav {
+
+    &__item {
+        font-size: 3.2rem;
+        @include medium {
+            display: inline-block;
+            width: 23%;
+        }
+    }
+
+    &__link {
+        color: $color-white;
+        padding: $grid-base;
+        border-radius: .4rem;
+        margin-top: 4.5rem;
+        display: block;
+        text-align: center;
+        transition-duration: .5s;
+
+        &:hover { 
+            
+            text-shadow: 0 0 10px #fff; 
+        }
+
+    }
+
+}
+
+// .nav_hamburger {
+
+//     display: none;
+//     color: $color-white;
+
+//     &__material-icons{
+//         position: absolute;
+//         top: 3rem;
+//         right: 3rem;
+//         margin: 0 auto;
+//         font-size: 4rem;
+//         cursor: pointer;
+//         z-index: 3;
+//     }
+
+//     &__ul {
+
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         width: 50%;
+//         height: 80hv;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         background-color: $color3;
+//         z-index: 2;
+//         transition-duration: 1s;
+
+//     }
+
+//     &__item {
+
+//         flex-basis: 13%;
+//         width: 100%;
+//         font-size: 2rem;
+//         border-bottom:  1px solid $color2;
+
+//         &:nth-last-of-type(1) {
+//             border-top: 1px solid $color2;
+//         }
+
+//     }
+
+//     &__link {
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
