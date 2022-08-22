@@ -9,18 +9,31 @@
     margin: 0;
     padding: 1.5 * $grid-base;
 
-    &--tekst{
-        position: relative;
+    &--center{
+        height: 85%;
+        display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     
-//    @include small {
-//         flex-direction: row;
-//    }
 
     @include medium {
         flex-direction: row;
     }
+    &__kontakt {
+        
+            
+            
+            margin: 2rem;
+            color: $color1;
+            font-size: 1.7rem;
+            border-radius: 10px;
+            box-shadow: 8px 8px 20px 0px  $color1;
+            transform: translateY(10rem);
+            transition-duration: 10s;
+        
+        
+        }
+    }
 
-}
