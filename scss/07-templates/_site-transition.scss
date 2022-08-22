@@ -1,0 +1,7 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+
+.site-transition{
+    @include trans-box($color3, $color1);
+}

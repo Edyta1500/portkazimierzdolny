@@ -2,11 +2,12 @@
 
 .site-section {
 
-    min-height: 70vh;
+    min-height: 80vh;
     padding-top: 3rem;
+    padding-bottom: 3rem;
 
     &--bg-color {
-        background-color: $color-bg-section;
+        background-color: $color4;
     }
 
 }

@@ -78,6 +78,22 @@ p {
   margin-top: 15px;
 }
 
+table {
+  font-family: "Roboto", sans-serif;
+  color: #222601;
+  background-color: transparent;
+  margin: 10px auto;
+}
+
+table th, table td {
+  border: 2px groove #f2f2f2;
+  padding: 3px;
+}
+
+tbody tr:nth-last-of-type(even) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -221,7 +237,7 @@ p {
   color: #f2f2f2;
   padding: 10px;
   border-radius: 0.4rem;
-  margin-top: 4.5rem;
+  margin-top: 1.5rem;
   display: block;
   text-align: center;
   transition-duration: 0.5s;
@@ -340,12 +356,41 @@ p {
 }
 
 .table {
-  color: #222601;
-  font-size: 2rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 0.68rem;
+  width: 100%;
+  overflow-x: scroll;
+}
+@media screen and (min-width: 340px) {
+  .table {
+    width: 100%;
+    font-size: 0.78rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .table {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .table {
+    width: 60%;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .table {
+    width: 40%;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+}
+.table--txt-center {
+  text-align: center;
+  vertical-align: center;
 }
 
-.tekst {
+.text {
   color: #222601;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
@@ -354,12 +399,12 @@ p {
   line-height: 2.5rem;
 }
 @media screen and (min-width: 768px) {
-  .tekst {
+  .text {
     width: 60%;
   }
 }
 @media screen and (min-width: 1200px) {
-  .tekst {
+  .text {
     width: 40%;
   }
 }
@@ -400,11 +445,12 @@ p {
 }
 
 .site-section {
-  min-height: 70vh;
+  min-height: 80vh;
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .site-section--bg-color {
-  background-color: #9fbcbf;
+  background-color: #BBBF9F;
 }
 
 .site-contact {
@@ -436,6 +482,13 @@ p {
   color: #595302;
 }
 
+.site-transition {
+  width: 100%;
+  position: absolute;
+  height: 10%;
+  background-image: linear-gradient(180deg #222601 0%, #f2f2f2 100%) center/cover fixed;
+}
+
 .text-color-white {
   color: #f2f2f2;
 }
@@ -446,6 +499,10 @@ p {
 
 .text-align-justify {
   text-align: justify;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
