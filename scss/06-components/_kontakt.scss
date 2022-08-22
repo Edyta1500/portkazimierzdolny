@@ -2,12 +2,16 @@
 
 
 .kontakt{
+    display:flex;
+    padding: 1rem;
     margin: 4rem 1rem;
     color: $color1;
-    font-size: 2rem;
-    font-family: 'Roboto, sans-serif';
-    background-color: $color-transparent;
+    font-size: 1.7rem;
+    // background-color: $color-transparent;
     border-radius: 10px;
     box-shadow: 8px 8px 20px 0px  $color1;
+    transform: translateY(120px);
+    transition-duration: 10s;
+
 
 }

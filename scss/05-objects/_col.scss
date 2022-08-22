@@ -52,17 +52,19 @@
 
 }
 .col__kont {
-    height: 100vh;
-    display: relative;
+    position:absolute;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: space-around;
-    flex-basis: 23%;
-
+    flex-basis: 20%;
+    
     @include medium {
         flex-direction: row;
-        align-items: center;
+        align-content:space-between;
+       flex-basis: 30%;
+    
     }
 
 }

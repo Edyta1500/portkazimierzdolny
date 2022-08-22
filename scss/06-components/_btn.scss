@@ -60,7 +60,7 @@
     transition-duration: .5s;
 
     &--classic {
-        
+            display: flex;
             border-radius: .6rem;
             width: 15rem;
             height: 6rem;
