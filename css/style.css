@@ -172,6 +172,22 @@ tbody tr:nth-last-of-type(even) {
   }
 }
 
+.col__kont {
+  height: 100vh;
+  display: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  flex-basis: 23%;
+}
+@media screen and (min-width: 768px) {
+  .col__kont {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 .social {
   width: 200px;
   height: 83px;
@@ -225,12 +241,19 @@ tbody tr:nth-last-of-type(even) {
 }
 
 .nav__item {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .nav__item {
     display: inline-block;
     width: 23%;
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    width: 23%;
+    font-size: 4rem;
   }
 }
 .nav__link {
@@ -246,18 +269,62 @@ tbody tr:nth-last-of-type(even) {
   text-shadow: 0 0 10px #fff;
 }
 
+.nav_hamburger {
+  display: none;
+  color: #f2f2f2;
+}
+.nav_hamburger__material-icons {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  margin: 0 auto;
+  font-size: 4rem;
+  cursor: pointer;
+  z-index: 3;
+}
+.nav_hamburger__ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 80hv;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222601;
+  z-index: 2;
+  transition-duration: 1s;
+}
+.nav_hamburger__item {
+  flex-basis: 13%;
+  width: 100%;
+  font-size: 2rem;
+  border-bottom: 1px solid #595302;
+}
+.nav_hamburger__item:nth-last-of-type(1) {
+  border-top: 1px solid #595302;
+}
+.nav_hamburger__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .heading--h1 {
   color: #f2f2f2;
-  font-size: 6rem;
+  font-size: 4rem;
+}
+@media screen and (min-width: 576px) {
+  .heading--h1 {
+    font-size: 6rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .heading--h1 {
     font-size: 8rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .heading--h1 {
-    font-size: 10rem;
   }
 }
 .heading--h2 {
@@ -265,12 +332,16 @@ tbody tr:nth-last-of-type(even) {
   width: 100%;
   text-align: center;
 }
+.heading--h3 {
+  font-size: 3rem;
+  text-align: center;
+}
 
 .btn-transparent {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 0.2ex;
   z-index: 1;
   box-shadow: 0 0 10px #fff;
@@ -278,13 +349,19 @@ tbody tr:nth-last-of-type(even) {
 }
 .btn-transparent--classic {
   border-radius: 0.6rem;
-  width: 20rem;
-  height: 10rem;
-  line-height: 5rem;
+  width: 15rem;
+  height: 6rem;
+  line-height: 2rem;
   padding: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .btn-transparent--classic {
+    height: 10rem;
+    line-height: 5rem;
+  }
+}
 .btn-transparent:hover {
-  background-color: rgba(242, 242, 242, 0.2);
+  background-color: rgba(242, 242, 242, 0.5);
   box-shadow: 0 0 15px #f2f2f2;
 }
 
@@ -405,8 +482,20 @@ tbody tr:nth-last-of-type(even) {
 }
 @media screen and (min-width: 1200px) {
   .text {
-    width: 40%;
+    width: 50%;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
+}
+
+.kontakt {
+  margin: 4rem 1rem;
+  color: #f2f2f2;
+  font-size: 2rem;
+  font-family: "Roboto, sans-serif";
+  background-color: rgba(242, 242, 242, 0.5);
+  border-radius: 10px;
+  box-shadow: 8px 8px 20px 0px #f2f2f2;
 }
 
 .site-body__social {
@@ -426,19 +515,24 @@ tbody tr:nth-last-of-type(even) {
 }
 .site-header__nav {
   position: absolute;
-  width: 60%;
+  width: 100%;
   text-align: center;
   margin-top: 30px;
 }
+@media screen and (min-width: 768px) {
+  .site-header__nav {
+    width: 70%;
+  }
+}
 .site-header__h1 {
   position: absolute;
-  bottom: 40%;
+  bottom: 30%;
   width: 100%;
   text-align: center;
 }
 .site-header__button {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -457,7 +551,7 @@ tbody tr:nth-last-of-type(even) {
   background: url("../../assets/img/bosmanat.JPG") center/cover fixed;
   color: #f2f2f2;
   position: relative;
-  height: 85vh;
+  height: 100vh;
 }
 .site-contact__blackout {
   position: absolute;

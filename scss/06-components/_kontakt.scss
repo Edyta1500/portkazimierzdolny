@@ -1,0 +1,13 @@
+@use '../01-settings' as * ;
+
+
+.kontakt{
+    margin: 4rem 1rem;
+    color: $color1;
+    font-size: 2rem;
+    font-family: 'Roboto, sans-serif';
+    background-color: $color-transparent;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px 0px  $color1;
+
+}

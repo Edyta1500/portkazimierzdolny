@@ -1,4 +1,5 @@
 @use '../01-settings/' as *;
+@use '../02-tools/' as *;
 @use 'sass:color';
 
 // .btn {
@@ -51,7 +52,7 @@
     display: inline-block;
     color: $color-white;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     
     letter-spacing: .2ex;
     z-index: 1;
@@ -61,10 +62,15 @@
     &--classic {
         
             border-radius: .6rem;
-            width: 20rem;
-            height: 10rem;
-            line-height: 5rem;
+            width: 15rem;
+            height: 6rem;
+            line-height: 2rem;
             padding: 2rem;
+
+            @include medium {
+                height: 10rem;
+                line-height: 5rem;
+            }
     }
 
     &:hover {
@@ -74,5 +80,7 @@
 
 
     }
+
+    
 
 }

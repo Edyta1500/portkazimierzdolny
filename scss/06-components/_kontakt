@@ -1,5 +1,0 @@
-@use '../01-settings' as *;
-
-.kontakt{
-
-}

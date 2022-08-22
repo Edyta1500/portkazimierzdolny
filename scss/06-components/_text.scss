@@ -15,7 +15,9 @@
     }
 
     @include large {
-        width: 40%;
+        width: 50%;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 
 }

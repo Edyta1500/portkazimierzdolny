@@ -51,3 +51,18 @@
     }
 
 }
+.col__kont {
+    height: 100vh;
+    display: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    flex-basis: 23%;
+
+    @include medium {
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
