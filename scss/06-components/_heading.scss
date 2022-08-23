@@ -27,12 +27,14 @@
 
     }
     &--h3 {
-        display: flex;
-        font-size: 3rem;
-        align-items: center;
-        width: 100%;
+        font-weight: bold;
+        font-size: 2.5rem;
+    
+       @include small{
+        font-sise:3.5rem;
+       }
         @include medium {
-            font-size: 5rem;
+            font-size: 6rem;
         }
     }
 }

@@ -20,8 +20,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .font-sm {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     
+    
+    @include small {
+        font-size: 1.5rem;
+    }
     @include medium {
         font-size: 2.5rem;
     }

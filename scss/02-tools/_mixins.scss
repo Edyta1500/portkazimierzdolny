@@ -10,7 +10,7 @@
 
 @mixin small {
 
-    @media screen and(min-width: $bp-sm) {
+    @media screen and(min-width: $bp-xs) {
         @content;
         
     }
