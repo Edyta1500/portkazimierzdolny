@@ -1,11 +1,12 @@
 @use '../01-settings/' as *;
+@use  '../02-tools/' as *;
 
 .site-contact {
 
     background: url('../../assets/img/bosmanat.JPG') center/cover fixed;
     color: $color-white;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 
     &__blackout {
         position: absolute;
@@ -17,6 +18,7 @@
 
     &__h2 {
         position: absolute;
+        margin-top:2rem;
     }
 
     &__form {
@@ -26,5 +28,5 @@
         transform: translate(-50%, -50%);
     }
     
-
+    
 }

@@ -94,6 +94,14 @@ tbody tr:nth-last-of-type(even) {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+@keyframes slider {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 .container {
   width: 100%;
   margin: 0 auto;
@@ -118,7 +126,7 @@ tbody tr:nth-last-of-type(even) {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   padding: 15px;
 }
 .row--center {
@@ -520,6 +528,51 @@ tbody tr:nth-last-of-type(even) {
   }
 }
 
+.gallery__box {
+  width: 120px;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.gallery__point {
+  width: 10px;
+  height: 10px;
+  background-color: #595302;
+  margin: 10px;
+}
+.gallery__active {
+  background-color: rgba(242, 242, 242, 0.5);
+}
+
+.site-gallery > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: url("../assets/img/bosmanat.JPG") center/cover;
+  animation: slider 20s linear infinite;
+}
+
+.site-gallery > div:nth-of-type(2) {
+  background-image: url("../assets/img/port5.JPG");
+  animation-delay: 5s;
+}
+
+.site-gallery > div:nth-of-type(3) {
+  background-image: url("../assets/img/foto3.jpeg");
+  animation-delay: 10s;
+}
+
+.site-gallery > div:nth-of-type(4) {
+  background-image: url("../assets/img/port_dron11.jpg");
+  animation-delay: 15s;
+}
+
 .site-body__social {
   position: fixed;
   left: -135px;
@@ -573,7 +626,7 @@ tbody tr:nth-last-of-type(even) {
   background: url("../../assets/img/bosmanat.JPG") center/cover fixed;
   color: #f2f2f2;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 .site-contact__blackout {
   position: absolute;
@@ -584,6 +637,7 @@ tbody tr:nth-last-of-type(even) {
 }
 .site-contact__h2 {
   position: absolute;
+  margin-top: 2rem;
 }
 .site-contact__form {
   position: absolute;
@@ -603,6 +657,12 @@ tbody tr:nth-last-of-type(even) {
   position: absolute;
   height: 10%;
   background-image: linear-gradient(180deg #222601 0%, #f2f2f2 100%) center/cover fixed;
+}
+
+.site-gallery {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .text-color-white {
