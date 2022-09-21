@@ -131,8 +131,9 @@ tbody tr:nth-last-of-type(even) {
 }
 .row--center {
   min-height: 85%;
-  align-items: center;
-  justify-content: center;
+  max-width: 700px;
+  align-items: flex-end;
+  justify-content: space-evenly;
 }
 @media screen and (min-width: 768px) {
   .row {
@@ -140,14 +141,10 @@ tbody tr:nth-last-of-type(even) {
   }
 }
 .row__kontakt {
-  margin: 1rem;
-  padding: 0.7rem;
   color: #222601;
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: rgba(242, 242, 242, 0.704);
   border-radius: 10px;
   box-shadow: 8px 8px 20px 0px #222601;
-  transform: translateY(6rem);
-  transition-duration: 5s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,17 +268,12 @@ tbody tr:nth-last-of-type(even) {
 
 .nav__item {
   font-size: 2.2rem;
-}
-@media screen and (min-width: 340px) {
-  .nav__item {
-    display: inline-block;
-    width: 23%;
-    font-size: 3rem;
-  }
+  display: inline-block;
+  margin-left: 1rem;
 }
 @media screen and (min-width: 768px) {
   .nav__item {
-    width: 23%;
+    width: 18%;
     font-size: 4rem;
   }
 }
@@ -359,6 +351,7 @@ tbody tr:nth-last-of-type(even) {
 .heading--h2 {
   font-size: 5rem;
   width: 100%;
+  line-height: 10rem;
   text-align: center;
 }
 .heading--h3 {
@@ -389,19 +382,19 @@ tbody tr:nth-last-of-type(even) {
 .btn-transparent--classic {
   display: flex;
   border-radius: 0.6rem;
-  width: 15rem;
-  height: 6rem;
-  line-height: 2rem;
-  padding: 2rem;
+  width: 16.8rem;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .btn-transparent--classic {
+    width: 16.8rem;
     height: 10rem;
-    line-height: 5rem;
   }
 }
 .btn-transparent:hover {
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: rgba(242, 242, 242, 0.704);
   box-shadow: 0 0 15px #f2f2f2;
 }
 
@@ -474,7 +467,7 @@ tbody tr:nth-last-of-type(even) {
 
 .table {
   font-size: 0.68rem;
-  width: 100%;
+  width: 90%;
   overflow-x: scroll;
 }
 @media screen and (min-width: 340px) {
@@ -495,13 +488,6 @@ tbody tr:nth-last-of-type(even) {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 1200px) {
-  .table {
-    width: 40%;
-    font-size: 2.5rem;
-    white-space: nowrap;
-  }
-}
 .table--txt-center {
   text-align: center;
   vertical-align: center;
@@ -512,7 +498,7 @@ tbody tr:nth-last-of-type(even) {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   width: 90%;
-  margin-top: 4.5rem;
+  margin: 4.5rem auto 0 auto;
   line-height: 2.5rem;
 }
 @media screen and (min-width: 768px) {
@@ -544,7 +530,7 @@ tbody tr:nth-last-of-type(even) {
   margin: 10px;
 }
 .gallery__active {
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: rgba(242, 242, 242, 0.704);
 }
 
 .site-gallery > div {
@@ -573,10 +559,71 @@ tbody tr:nth-last-of-type(even) {
   animation-delay: 15s;
 }
 
+.ico--img {
+  background: url("../../assets/img/no-pets.png") center/cover;
+  justify-content: flex-start;
+}
+
+.ico--material-icon {
+  font-size: 5rem;
+}
+
+.ico {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+.ico__designation {
+  font-size: 2rem;
+  font-family: Roboto, "sans-serif";
+}
+
+.cookies {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  line-height: 1rem;
+  padding: 5rem;
+  background-color: #595302;
+}
+.cookies__text {
+  width: 70%;
+  text-align: justify;
+  padding: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .cookies__text {
+    width: 90%;
+    text-align: center;
+  }
+}
+.cookies__close {
+  width: 30%;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .cookies__close {
+    width: 10%;
+  }
+}
+.cookies__close a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
 .site-body__social {
   position: fixed;
   left: -135px;
   bottom: 20%;
+}
+.site-body__cookies {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 .site-header {
@@ -627,6 +674,8 @@ tbody tr:nth-last-of-type(even) {
   color: #f2f2f2;
   position: relative;
   min-height: 100vh;
+  display: flex;
+  align-items: stretch;
 }
 .site-contact__blackout {
   position: absolute;
@@ -648,7 +697,6 @@ tbody tr:nth-last-of-type(even) {
 
 .site-footer {
   background-color: #9fbcbf;
-  height: 20vh;
   color: #595302;
 }
 
@@ -663,6 +711,14 @@ tbody tr:nth-last-of-type(even) {
   height: 80vh;
   position: relative;
   overflow: hidden;
+}
+
+.site-offer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .text-color-white {

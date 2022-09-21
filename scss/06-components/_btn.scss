@@ -62,14 +62,16 @@
     &--classic {
             display: flex;
             border-radius: .6rem;
-            width: 15rem;
-            height: 6rem;
-            line-height: 2rem;
-            padding: 2rem;
+            width: 16.8rem;
+            height: 10rem;
+            align-items: center;
+            justify-content: center;
+
 
             @include medium {
+                width: 16.8rem;
+               
                 height: 10rem;
-                line-height: 5rem;
             }
     }
 

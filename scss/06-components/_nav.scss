@@ -5,14 +5,15 @@
 
     &__item {
         font-size: 2.2rem;
-        @include small{
-            display: inline-block;
-            width: 23%;
-            font-size: 3rem;
-        }
+        display: inline-block;
+        margin-left: 1rem;
+        // @include small{
+        //     width: 18%;
+        //     font-size: 3rem;
+        // }
         
         @include medium {
-            width: 23%;
+            width: 18%;
             font-size: 4.0rem;
         }
 

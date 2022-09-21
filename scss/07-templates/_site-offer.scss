@@ -1,0 +1,11 @@
+@use '../01-settings/' as *;
+@use '../02-tools/' as *;
+
+.site-offer{
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
