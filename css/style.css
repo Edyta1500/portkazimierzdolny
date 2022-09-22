@@ -579,11 +579,13 @@ tbody tr:nth-last-of-type(even) {
 }
 
 .cookies {
+  display: none;
   font-family: "Roboto", sans-serif;
   width: 100%;
   line-height: 1rem;
   padding: 5rem;
   background-color: #595302;
+  z-index: 3;
 }
 .cookies__text {
   width: 70%;
@@ -599,10 +601,10 @@ tbody tr:nth-last-of-type(even) {
 .cookies__close {
   width: 30%;
   position: absolute;
-  top: 0.5rem;
+  top: 0.8rem;
   right: 0.5rem;
-  padding: 0.5rem;
-  text-align: center;
+  padding: 3rem;
+  text-align: right;
 }
 @media screen and (min-width: 768px) {
   .cookies__close {
@@ -612,7 +614,10 @@ tbody tr:nth-last-of-type(even) {
 .cookies__close a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 3rem;
+}
+.cookies__close a:hover {
+  color: indianred;
 }
 
 .site-body__social {

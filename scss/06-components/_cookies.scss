@@ -2,12 +2,13 @@
 @use '../02-tools/' as *;
 
 .cookies{
-    // display: none;
+    display: none;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     line-height: 1rem;
     padding: 5rem;
     background-color: $color2;
+    z-index: 3;
 
     &__text {
         width: 70%;
@@ -24,10 +25,11 @@
     &__close{
         width: 30%;
         position:absolute;
-        top: 0.5rem;
+        top: 0.8rem;
         right: 0.5rem;
-        padding: 0.5rem;
-        text-align:center;
+        padding: 3rem ;
+        text-align: right;
+       
 
 
         @include medium {
@@ -37,7 +39,11 @@
         & a {
             text-decoration: none;
             color:#fff;
-            font-size: 1.8rem;
+            font-size: 3rem;
+
+            &:hover {
+                color:indianred;
+            }
         }
     }
 }
