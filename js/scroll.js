@@ -5,11 +5,12 @@ $(function(){
     
 
     $('header a').on('click', function(e){
+       
         e.preventDefault();
 
         const goToSection = $(this).attr('href');
 
-        console.log(goToSection);
+        // console.log(goToSection);
 
         $('body, html').animate({
 

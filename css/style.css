@@ -72,8 +72,6 @@ a {
 
 p {
   font-family: "Square Peg", sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.8rem;
   padding: 10px;
   margin-top: 15px;
 }
@@ -132,7 +130,7 @@ tbody tr:nth-last-of-type(even) {
 .row--center {
   min-height: 85%;
   max-width: 700px;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-evenly;
 }
 @media screen and (min-width: 768px) {
@@ -318,7 +316,7 @@ tbody tr:nth-last-of-type(even) {
   transition-duration: 1s;
 }
 .nav_hamburger__item {
-  flex-basis: 13%;
+  flex-basis: 10%;
   width: 100%;
   font-size: 2rem;
   border-bottom: 1px solid #595302;
@@ -370,27 +368,24 @@ tbody tr:nth-last-of-type(even) {
 }
 
 .btn-transparent {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #f2f2f2;
-  text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.2ex;
   z-index: 1;
   box-shadow: 0 0 10px #fff;
   transition-duration: 0.5s;
-}
-.btn-transparent--classic {
-  display: flex;
   border-radius: 0.6rem;
-  width: 16.8rem;
-  height: 10rem;
-  align-items: center;
-  justify-content: center;
+  width: 8.4rem;
+  height: 5rem;
 }
 @media screen and (min-width: 768px) {
-  .btn-transparent--classic {
+  .btn-transparent {
     width: 16.8rem;
     height: 10rem;
+    font-size: 3rem;
   }
 }
 .btn-transparent:hover {
@@ -540,23 +535,28 @@ tbody tr:nth-last-of-type(even) {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background: url("../assets/img/bosmanat.JPG") center/cover;
-  animation: slider 20s linear infinite;
+  background: url("../../assets/img/port2.JPG") center/cover;
+  animation: slider 50s linear infinite;
 }
 
 .site-gallery > div:nth-of-type(2) {
-  background-image: url("../assets/img/port5.JPG");
-  animation-delay: 5s;
-}
-
-.site-gallery > div:nth-of-type(3) {
-  background-image: url("../assets/img/foto3.jpeg");
+  background-image: url("../../assets/img/port5.JPG");
   animation-delay: 10s;
 }
 
+.site-gallery > div:nth-of-type(3) {
+  background-image: url("../../assets/img/port_dron2.jpg");
+  animation-delay: 20s;
+}
+
 .site-gallery > div:nth-of-type(4) {
-  background-image: url("../assets/img/port_dron11.jpg");
-  animation-delay: 15s;
+  background-image: url("../../assets/img/port_dron11.jpg");
+  animation-delay: 30s;
+}
+
+.site-gallery > div:nth-of-type(5) {
+  background-image: url("../../assets/img/port6.JPG");
+  animation-delay: 40s;
 }
 
 .ico--img {
@@ -583,7 +583,7 @@ tbody tr:nth-last-of-type(even) {
   font-family: "Roboto", sans-serif;
   width: 100%;
   line-height: 1rem;
-  padding: 5rem;
+  padding: 2rem;
   background-color: #595302;
   z-index: 3;
 }
@@ -596,6 +596,8 @@ tbody tr:nth-last-of-type(even) {
   .cookies__text {
     width: 90%;
     text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 .cookies__close {
@@ -614,7 +616,7 @@ tbody tr:nth-last-of-type(even) {
 .cookies__close a {
   text-decoration: none;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .cookies__close a:hover {
   color: indianred;
@@ -641,15 +643,11 @@ tbody tr:nth-last-of-type(even) {
   height: 100%;
 }
 .site-header__nav {
+  display: flex;
+  justify-content: center;
   position: absolute;
   width: 100%;
-  text-align: center;
   margin-top: 30px;
-}
-@media screen and (min-width: 768px) {
-  .site-header__nav {
-    width: 70%;
-  }
 }
 .site-header__h1 {
   position: absolute;
@@ -701,8 +699,18 @@ tbody tr:nth-last-of-type(even) {
 }
 
 .site-footer {
-  background-color: #9fbcbf;
-  color: #595302;
+  background-color: #BBBF9F;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: #222601;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .site-footer {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
 }
 
 .site-transition {

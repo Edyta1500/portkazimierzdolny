@@ -1,9 +1,19 @@
 @use '../01-settings/' as *;
+@use '../02-tools/' as * ;
 
 .site-footer {
 
-    background-color: $color-bg-footer;
-   
-    color: $color2;
+    background-color: $color4;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+    color: $color3;
+    padding: 2rem;
+
+    @include medium{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
 
 }

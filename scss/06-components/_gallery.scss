@@ -47,21 +47,25 @@
     height: 100%;
     width: 100%;
     opacity: 0;
-    background: url('../assets/img/bosmanat.JPG') center/cover;
-    animation: slider 20s linear infinite;
+    background: url('../../assets/img/port2.JPG') center/cover;
+    animation: slider 50s linear infinite;
     
-}
+} 
 .site-gallery > div:nth-of-type(2) {
-    background-image: url('../assets/img/port5.JPG');
-    animation-delay: 5s;
-}
-
-.site-gallery > div:nth-of-type(3) {
-    background-image: url('../assets/img/foto3.jpeg');
+    background-image: url('../../assets/img/port5.JPG');
     animation-delay: 10s;
+}
+ 
+.site-gallery > div:nth-of-type(3) {
+    background-image: url('../../assets/img/port_dron2.jpg');
+    animation-delay: 20s;
 }
 
 .site-gallery > div:nth-of-type(4) {
-    background-image: url('../assets/img/port_dron11.jpg');
-    animation-delay: 15s;
+    background-image: url('../../assets/img/port_dron11.jpg');
+    animation-delay: 30s;
+}
+.site-gallery > div:nth-of-type(5) {
+    background-image: url('../../assets/img/port6.JPG');
+    animation-delay: 40s; 
 }

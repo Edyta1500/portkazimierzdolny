@@ -21,14 +21,14 @@
 //             background-color: color.scale($color-red, $blackness: 20%);
 //         }
 //     }
-    
+
 //     &--green {
 //         background-color: $color-green;
 //         &:hover {
 //             background-color: color.scale($color-green, $blackness: 20%);
 //         }
 //     }
-    
+
 //     &--outline {
 //         background-color: transparent;
 //         border: 1px solid $color-white;
@@ -48,32 +48,28 @@
 // }
 
 .btn-transparent {
-    
-    display: inline-block;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: $color-white;
-    text-align: center;
-    font-size: 3rem;
-    
+    font-size: 2rem;
     letter-spacing: .2ex;
     z-index: 1;
     box-shadow: 0 0 10px #fff;
     transition-duration: .5s;
-
-    &--classic {
-            display: flex;
-            border-radius: .6rem;
-            width: 16.8rem;
-            height: 10rem;
-            align-items: center;
-            justify-content: center;
+    border-radius: .6rem;
+    width: 16.8rem*0.5;
+    height: 10rem*.5;
 
 
-            @include medium {
-                width: 16.8rem;
-               
-                height: 10rem;
-            }
+    @include medium {
+        width: 16.8rem;
+        height: 10rem;
+        font-size: 3rem;
     }
+
 
     &:hover {
 
@@ -83,6 +79,6 @@
 
     }
 
-    
+
 
 }
