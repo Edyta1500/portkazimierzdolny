@@ -535,27 +535,27 @@ tbody tr:nth-last-of-type(even) {
   height: 100%;
   width: 100%;
   opacity: 0;
-  background: url("../../assets/img/port2.JPG") center/cover;
+  background: url("../assets/img/port2.JPG") center/cover;
   animation: slider 50s linear infinite;
 }
 
 .site-gallery > div:nth-of-type(2) {
-  background-image: url("../../assets/img/port5.JPG");
+  background-image: url("../assets/img/port5.JPG");
   animation-delay: 10s;
 }
 
 .site-gallery > div:nth-of-type(3) {
-  background-image: url("../../assets/img/port_dron2.jpg");
+  background-image: url("../assets/img/port_dron2.jpg");
   animation-delay: 20s;
 }
 
 .site-gallery > div:nth-of-type(4) {
-  background-image: url("../../assets/img/port_dron11.jpg");
+  background-image: url("../assets/img/port_dron11.jpg");
   animation-delay: 30s;
 }
 
 .site-gallery > div:nth-of-type(5) {
-  background-image: url("../../assets/img/port6.JPG");
+  background-image: url("../assets/img/port6.JPG");
   animation-delay: 40s;
 }
 
