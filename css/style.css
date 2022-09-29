@@ -560,7 +560,7 @@ tbody tr:nth-last-of-type(even) {
 }
 
 .ico--img {
-  background: url("../../assets/img/no-pets.png") center/cover;
+  background: url("../assets/img/no-pets.png") center/cover;
   justify-content: flex-start;
 }
 
