@@ -4,7 +4,10 @@
 // wg BEM to blok
 .site-header {
 
+    background-color: $color-white;
     background: url('../assets/img/header.JPG') center/cover fixed;
+    
+   
     height: 100vh;
 
     // wg BEM to element
